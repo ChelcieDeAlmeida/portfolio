@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #fce138;
+    --primary-color: #faece9;
     --secondary-color: #024e76;
-    --tertiary-color: #39a6b2;
+    --tertiary-color: rgb(152, 37, 60);
   }
 
 * {
@@ -11,9 +11,16 @@
   }
   
   body {
-    /* more on this crazy alphanumerical value in a minute! */
-    color: var(--tertiary-color);
-    font-family: Helvetica, Arial, sans-serif;
+    color: black;
+    /* background: rgb(242, 233, 233); */
+    font-family: Helvetica, Arial, sans-serif; 
+  }
+
+  p {
+    color: black;
+    font-weight:lighter;
+    font-family:'arial narrow' ;
+    font-size: 23px;
   }
   
   /* apply styles to <header> */
@@ -26,22 +33,75 @@
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    background-image: url('../images/hero-bg.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-position: 80%;
-    z-index: 9999;
   }
 
   header h1 {
-    font-weight: bold;
-    font-size: 36px;
+    font-weight:lighter;
+    font-family:'arial narrow' ;
+    font-size: 30px;
     color: var(--primary-color);
     margin: 0;
-    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+    /* text-shadow: 0 0 10px rgba(0,0,0,0.5); */
   }
 
   header a {
     text-decoration: none;
     color: var(--primary-color);
   }
+
+  header nav {
+    margin: 7px 0;
+  }
+  
+  header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+  
+  header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+  }
+
+  /* hero starts */
+
+  .hero {
+    background-image: url('https://www.eligocs.com/wp-content/uploads/2020/09/mean_mern_difference.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    /* align-items: flex-start; */
+  }
+
+
+  /* Footer */
+
+  footer {
+    background-color: var(--tertiary-color);
+    width: auto;
+    height: 80px;
+    padding: 40px;
+  }
+  
+  footer h2 {
+    color: var(--primary-color);
+    font-weight:lighter;
+    font-family:'arial narrow' ;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
