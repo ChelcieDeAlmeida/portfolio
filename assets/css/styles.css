@@ -17,10 +17,8 @@
   }
 
   p {
-    color: black;
-    font-weight:lighter;
     font-family:'arial narrow' ;
-    font-size: 23px;
+    font-size: 28px;
   }
 
   body h2 {
@@ -120,8 +118,8 @@
   /* section start*/
 
   .section {
-    margin: 20px 60px;
-    padding-bottom: 50px;
+    margin: 40px 60px;
+    padding-bottom: 42px;
     width: 80%;
     display: flex;
     /* flex-wrap: wrap; */
@@ -274,8 +272,9 @@
   #contact-me ul li a:hover {
     color: var(--secondary-color);
   }
+  /* contact end */
 
-  /* Footer */
+  /* Footer start*/
 
   footer {
     background-color: var(--tertiary-color);
@@ -295,4 +294,85 @@
     justify-content: center;
     align-items: center;
   }
+  /* Footer end */
+
+
+  /* Media Queries to accommodate three different form factor groups */
+
+  /* MEDIA QUERY FOR SMALL DESKTOPS WITH MAX WIDTH OF 980px & SMALLER */
+  @media screen and (max-width:980px) {
+
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+      position:relative;
+      width: max-content;
+    }
+
+    header h1 {
+      width: 100%;
+      text-align:center;
+    }
+
+    header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+    }
+
+    header nav ul li a {
+      font-size: 20px;
+    }
+
+    footer {
+      font-size: small;
+      height: auto;
+      font-weight: lighter;
+    }
+
+    footer h2, footer div {
+      text-align: center;
+      width: 100%;
+    }
+
+    .section {
+      display: flex;
+      flex-wrap: wrap;
+      margin:20px 20px ;
+      padding-bottom: 10px;
+      width:80% ;
+    }
+
+    .section-label {
+      width: 35%;
+    }
+
+    #contact-me .section-label {
+      width: 150px;
+    }
   
+    #contact-me h2 {
+      font-size: small;
+      display: flex;
+    }
+  
+    #about-me {
+      margin-top: 30px;
+      margin-bottom: 5px;
+    }
+  
+    #work {
+      margin-bottom: 40px;
+    }
+  }
+
+
+  /* MEDIA QUERY FOR TABLETS WITH MAX WIDTH OF 768 & SMALLER */
+  @media screen and (max-width:768px) {
+    
+  }
+
+  /* MEDIA QUERY FOR MOBILE PHONES WITH MAX WIDTH OF 575px & SMALLER */
+  @media screen and (max-width:575px) {
+    
+  }
