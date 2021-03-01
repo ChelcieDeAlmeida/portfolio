@@ -36,11 +36,11 @@
     <!-- hero/jumbotron -->
     <section class="hero">
 
-        <article>
-          <img src="./assets/images/chelciedealmeida.jpeg" alt="Chelcie covered in colored powder" />  
+        <article class="self-block">
+          <img src="./assets/images/chelciedealmeida.jpeg" alt="Chelcie covered in colored powder" class="self-block-img" />  
         </article>
 
-       <article>
+       <article class="grid-right">
         <h3>Let's Build An Experience</h3>
        </article> 
         
@@ -50,17 +50,20 @@
     <!-- "About Me"-->
     <section id="about-me" class="section">
 
-       <div class="section-label">
+       <article class="section-label">
         <h2>About</br>Me</h2>
-       </div>
+       </article>
         
-
-
+       <article class="grid-right">
+         <div class="about-content">
             <p>Welcome and thank you for visiting my site. I'm a Sr. Business Intelligence 
                 Analyst with vast experience in a multitude of analytical tools. 
                 I'm most comfortable with backend tools but with ambition, and a stellar work ethic, 
                 I plan to become a Software Engineer in the video game domain.
             </p>
+         </div>
+      </article>
+
     </section>
 
     <!-- "Work"-->
@@ -70,19 +73,59 @@
         <h2>Work</h2>
        </div>
 
+       <div class="grid-right">
 
+        <!-- run buddy proj-->
+        <div class="rb-proj">
+            <article class="proj-content">
+                <a href="https://chelciedealmeida.github.io/run-buddy/" target="_blank"> <img src="./assets/images/run-buddy-port.jpeg" alt="run buddy project - a web service that offers fitness services" /></a>
+            </article>
+      
+              <article class="bottom-left-corner">
+                <p>Run Buddy<br>
+                  <span>HTML/CSS</span>
+              </p>
+            </article>
+        </div>
+        <!-- horiseon proj -->
+        <div class="hori-proj">
+            <article class="proj-content">
+                <a href="https://chelciedealmeida.github.io/horiseon-refactor/" target="_blank"> <img src="./assets/images/horiseon-port.jpeg" alt="horiseon project - a business that offers online marketing services" /></a>
+            </article>
+      
+              <article class="bottom-left-corner">
+                <p>Horiseon<br>
+                  <span>HTML/CSS</span>
+              </p>
+            </article>
+        </div>
+
+        <!-- Goo buoy proj-->
+        <div class="goo-proj">
+            <article class="proj-content">
+                <a href="" target="_blank"> <img src="./assets/images/goo-buoy-port.jpeg" alt="goo buoy project - a web application that offers automated reporting capabilities" /></a>
+            </article>
+      
+              <article class="bottom-left-corner">
+                <p>Goo Buoy - Coming Soon<br>
+                  <span>SPARK/JS/PYTHON</span>
+              </p>
+            </article>
+        </div>
+
+       </div> <!--grid right end-->
 
     </section>
 
     <!-- "Contact Me"-->
     <section id="contact-me" class="section">
 
-        <div class="section-label">
+        <article class="section-label contact"> <!-- rename contact class for clarity-->
          <h2>Contact</br>Me</h2>   
-       </div>
+        </article>
 
-       <div>
-         <ul>
+       <article class="grid-right">
+         <ul class="contact-list">
             <li>
                 888.123.1234
             </li>
@@ -96,8 +139,7 @@
                 <a href="https://github.com/ChelcieDeAlmeida">Github</a>
             </li>
          </ul>
-
-       </div>
+        </article>
         
     </section>
 
