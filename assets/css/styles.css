@@ -197,7 +197,8 @@
   }
 
   .hori-proj img,
-  .goo-proj img {
+  .goo-proj img,
+  .pawpals-proj img {
     max-width: 40%;
     height: auto;
     padding: 0;
@@ -213,7 +214,8 @@
   }
 
   .hori-proj img:hover,
-  .goo-proj img:hover {
+  .goo-proj img:hover,
+  .pawpals-proj img:hover {
     max-width: 40%;
     height: auto;
     padding: 0;
@@ -223,7 +225,8 @@
 
   .rb-proj,
   .hori-proj,
-  .goo-proj{
+  .goo-proj,
+  .pawpals-proj {
     position: relative;
   }
 
